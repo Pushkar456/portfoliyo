@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pushkar prajapat-portfoliyo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+      <div class="nav">
+          <div class="logo">
+            <img src="img/logo.png" alt="">
+            <h1>mr.prajapat</h1>
+          </div>
+          <div class="nav_links">
+           <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Skills</a></li>
+              <li><a href="#">Contact</a></li>
+           </ul>
+          </div>
+      </div>
+    </section>
+    
+<!------------html for home----------  -->
+    
+    <section id="home">
+        <div class="main">
+            <div class="bg"></div>
+            <div class="content">
+               <h2>Hi <span>I'm</span> <br> Pushkar Prajapat</h2>
+               <h2>A Patianate Web-Developer</h2>  
+            </div>
+        </div>
+    </section>
+    
+<!---------About section html-------->
+
+    <section id="About">
+        <div class="row">
+         <div class="col_left about-content">
+            <h2 class="sub_title">About Me</h2>
+            <div class="tab-links">
+               <div class="tab-link active" onClick="activetab('tab1')"><h3>Skills</h3></div> 
+               <div class="tab-link" onClick="activetab('tab2')"><h3>Education</h3></div> 
+               <div class="tab-link" onClick="activetab('tab3')"><h3>Projects</h3></div> 
+            </div>
+            <div class="tab-content">
+                <div class="tab active_tab" id="tab1">    
+                   <ul>
+                      <li><span>Web Developement</span><br>full stack development</li>
+                      <li><span>App Developement</span><br>Android/ios development</li>
+                      <li><span>Python Develoment</span><br>All type python development</li>
+                   </ul>
+                </div>
+                <div class="tab" id="tab2">
+                    <ul>
+                      <li><span>B.tech(I.T)</span><br>from SYSITS <br>CGPA:9.6</li>
+                      <li><span>10th and 12th</span><br>from JNV <br>94% in 10th and,<br>84% in 12th</li>
+                      <li><span>Python Develoment</span><br>from Coursera with certificate</li>
+                   </ul>
+                </div>
+                <div class="tab" id="tab3">
+                   <ul>
+                      <li><span>Python</span><br>Scaner app </li>
+                      <li><span>Apps</span><br>videoFinder-ios app </li>
+                      <li><span>websites</span><br>Ecommerse web</li>
+                   </ul>
+                </div>
+            </div>
+          </div>
+            <div class="col_right">
+              <div class="about_img"><img src="img/logo.png" alt=""></div>
+            </div>
+        </div>
+        
+    </section>
+    
+<!---------Contact section html-------->
+    
+    <section Id="contact">
+        <div class="contact_content">
+            <div class="row">
+                <div class="con-left contact_col">
+                    <h2 class="sub_title">Contact Me</h2>
+                    <p><span>Email:</span> prajapatpushkar456@gmail.com</p>
+                    <p><span>Mobile:</span> 9098074792</p>
+                    <a href="">f</a>
+                    <a href="">I</a>
+                    <a href="">Ln</a>
+                    <a href="">Yt</a>
+                </div>
+                <div class="col-right contact_col">
+                    <form>
+                        <input type="text" required placeholder="Name">
+                        <input type="email" required placeholder="Email">
+                        <textarea type="text" required placeholder="message"></textarea>
+                        <button type="submit"  class="btn">submit</button>                     
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <div class="footer">
+        <p>copyright@All rights are reserved</p>
+    </div>
+    
+<!---------Contact section html-------->    
+    <script>
+       var tab_links=document.getElementsByClassName("tab-link");
+       var tab_content=document.getElementsByClassName("tab");
+     
+       function activetab(tabu){
+          for(tab of tab_links){
+            tab.classList.remove("active");
+          }
+          for(tabe of tab_content){
+            tabe.classList.remove("active_tab");
+          }
+          event.currentTarget.classList.add("active");
+          document.getElementById(tabu).classList.add("active_tab");
+       }
+    </script>
+</body>
+</html>
